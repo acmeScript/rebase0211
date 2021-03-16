@@ -1,0 +1,14 @@
+.darkmode {
+    box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    background-color: #282828;
+    border-color: transparent;
+    color: white;
+}
+.main__container {
+    display: flex;
+    flex-direction: column;
+    height: 80vh;
+    width: 100%;
+    border:3px solid yellow;
+    align-items: center;
+}

@@ -1,0 +1,54 @@
+{
+  "name": "fan-organizer-v2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel ./src/index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@firebase/app-types": "latest",
+    "@firebase/auth": "latest",
+    "@firebase/auth-types": "latest",
+    "@firebase/database": "latest",
+    "@firebase/util": "latest",
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/react-router-dom": "latest",
+    "babel-types": "latest",
+    "parcel-bundler": "latest",
+    "postcss-modules": "latest",
+    "prettier": "latest",
+    "react-is": "latest",
+    "typescript": "latest"
+  },
+  "dependencies": {
+    "@blueprintjs/core": "^3.24.0",
+    "@firebase/app": "latest",
+    "feather-icons": "latest",
+    "firebase": "latest",
+    "is-hotkey": "latest",
+    "moment": "latest",
+    "nanoevents": "^2.0.0",
+    "react": ">=15",
+    "react-dom": "^16.13.0",
+    "react-router-dom": "^5.1.2",
+    "reakit": "latest"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  }
+}

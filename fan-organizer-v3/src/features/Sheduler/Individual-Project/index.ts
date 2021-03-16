@@ -1,0 +1,1 @@
+export { IndividualProject } from './IndividualProject';

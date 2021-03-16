@@ -1,0 +1,7 @@
+.cache
+.yarn
+node_modules
+build
+dist
+src/config
+yarn-error.log

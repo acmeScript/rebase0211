@@ -1,0 +1,107 @@
+:root {
+    /* COLORS */
+    --basic-black: #000000;
+    --basic-extra-dark: #444444;
+    --basic-dark: #aaaaaa;
+    --basic-light: #eeeeee;
+    --basic-white: #ffffff;
+    --special-red: #ce0630;
+    /* TEXT */ 
+    --text-base-size: 1em;
+    --text-scale-ratio: 1.2;
+    --text-xs: calc((1em / var(--text-scale-ratio)) / var(--text-scale-ratio));
+    --text-sm: calc(var(--text-xs) * var(--text-scale-ratio));
+    --text-md: calc(var(--text-sm) * var(--text-scale-ratio) * var(--text-scale-ratio));
+    --text-lg: calc(var(--text-md) * var(--text-scale-ratio));
+    --text-xl: calc(var(--text-lg) * var(--text-scale-ratio));
+    --text-xxl: calc(var(--text-xl) * var(--text-scale-ratio));
+}
+html {
+    box-sizing: border-box;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+/*
+:hover {}
+:focus {}
+:select {}
+*/
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-display: swap;
+    src: url('../../../dist/fonts/Montserrat-Regular.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 700;
+    font-display: swap;
+    src: url('../../../dist/fonts/Montserrat-Medium.woff2') format('woff2');
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 900;
+    font-display: swap;
+    src: url('../../../dist/fonts/Montserrat-Bold.woff2') format('woff2');
+}
+
+body {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    line-height: 1;
+    font-family: 'Roboto', sans-serif;
+    color: #202020;
+    background-color: #fafafa;
+    /* font-smooth: always; */
+}
+header {
+    display: block;
+    margin: 0 0;
+    padding: 0 0;
+    position: relative;
+    border: 1px dashed yellow;
+}
+nav {
+    display: inline;
+    float: left;
+    display: flex;
+    width: 20%;
+    justify-content: center;
+    border: 1px dashed green;
+}
+@media screen and (max-width: 900px) {
+    nav {
+        display: block;
+        width: 100%;
+        margin-bottom: 20px; 
+    }
+  }
+main {
+    display: block;
+    position: relative;
+    float: right;
+    min-height: 600px;
+    height: 100vh;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer {
+    border: 1px dashed blue;
+}
+.darkmode {
+    box-shadow: 0 1px 0 rgba(0,0,0,0.15);
+    background-color: #282828;
+    border-color: transparent;
+    color: white;
+}
