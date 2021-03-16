@@ -6,7 +6,7 @@ import { Feed } from "../features/Feed";
 import { Profile } from "../features/Profile";
 import { Settings } from "../features/Settings";
 import { Sheduler } from "../features/Sheduler";
-
+import { Lesson } from '../hoc/inherit'
 
 export const App:React.FunctionComponent<{darkModeDefault:boolean | undefined}> = ({darkModeDefault=false}) => {
   const [darkMode, setDarkMode] = useState(darkModeDefault);
@@ -16,6 +16,7 @@ export const App:React.FunctionComponent<{darkModeDefault:boolean | undefined}> 
       <Profile />
       <Feed/>
       <Sheduler/>
+      <Lesson/> 
       <Settings/>
     </>
 );
